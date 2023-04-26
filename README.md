@@ -18,4 +18,9 @@
 
 # Wykorzystane biblioteki
 - Beautiful Soup
-- requests
+- Requests
+- Json
+- Os
+- Pandas
+- Numpy
+- Matplotlib
