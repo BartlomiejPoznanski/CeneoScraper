@@ -31,7 +31,7 @@ selectors ={
     }
 
 # product_code = input("Podaj kod produktu: ")
-product_code = "96693065"
+product_code = "31260410"
 url = f"https://www.ceneo.pl/{product_code}#tab=reviews"
 all_opinions = []
 
@@ -46,7 +46,7 @@ while(url):
             single_opinion[key]=extract_tag(opinion, *value)
         all_opinions.append(single_opinion)
     try:
-        url = "https://ceneo.pl" + extract_tag(page_dom, "a.pagination_next", "href")
+        url = "https://ceneo.pl" + extract_tag(page_dom, "a.pagination__next", "href")
     except TypeError:
         url = None
 
